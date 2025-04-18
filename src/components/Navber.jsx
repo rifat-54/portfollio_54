@@ -1,12 +1,59 @@
 import React from "react";
+import { FaDownload } from "react-icons/fa6";
+import { Link } from "react-scroll";
 
 const Navber = () => {
-    const links=<div className="flex space-x-3 text-2xl">
-    <li>Home</li>
-    <li>Contact</li>
-    <li>Send Mail</li>
-    <li>Projects</li>
+  const links = (
+    <div className="flex space-x-3 text-2xl">
+      <a className="cursor-pointer hover:text-red-500" href="/">
+        <li>Home</li>
+      </a>
+      <Link
+        to={"about"}
+        smooth={true}
+        duration={500}
+        className="cursor-pointer hover:text-red-500"
+      >
+        {" "}
+        <li>About</li>{" "}
+      </Link>
+
+      <Link
+        to={"projects"}
+        smooth={true}
+        duration={500}
+        className="cursor-pointer hover:text-red-500"
+      >
+        {" "}
+        <li>Projects</li>{" "}
+      </Link>
+
+    <Link
+        to={"skills"}
+        smooth={true}
+        duration={500}
+        className="cursor-pointer hover:text-red-500"
+      >
+        {" "}
+        <li>Skills</li>{" "}
+      </Link>
+
+      <Link
+        to={"contact"}
+        smooth={true}
+        duration={500}
+        className="cursor-pointer hover:text-red-500"
+      >
+        {" "}
+        <li>Contact</li>{" "}
+      </Link>
+
+      
+      
+   
+   
     </div>
+  );
   return (
     <div className="bg-[#4B5D67] text-white ">
       <div className="navbar  shadow-sm">
@@ -34,18 +81,16 @@ const Navber = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {links}
-                 
             </ul>
           </div>
           <a className="btn btn-ghost text-xl">daisyUI</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            {links}
-          </ul>
+          <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+        <button className='btn  bg-[#6DE1D2] text-white'>Download CV <FaDownload /></button>
+
         </div>
       </div>
     </div>

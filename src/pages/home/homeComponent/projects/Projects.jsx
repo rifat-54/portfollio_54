@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import groupstudy from '../../../../assets/groupstudy.png'
 const Projects = () => {
   return (
-    <div className="mb-24 md:px-1">
+    <div id="projects" className="mb-24 md:px-1">
       <h2 className="text-3xl font-bold text-center mt-2 mb-8">
         Popular Project
       </h2>

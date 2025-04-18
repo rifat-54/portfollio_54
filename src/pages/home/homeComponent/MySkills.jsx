@@ -8,7 +8,7 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 
 const MySkills = () => {
     return (
-        <div className='px-1 md:px-8'>
+        <div id='skills' className='px-1 md:px-8'>
             <h2 className='text-3xl font-bold text-center my-12'>MY SKILLS</h2>
             {/* skill image */}
             <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-white'>
