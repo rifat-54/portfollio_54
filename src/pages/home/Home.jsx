@@ -6,6 +6,7 @@ import SendMail from './homeComponent/SendMail/SendMail';
 import Gallery from './homeComponent/gallery/Gallery';
 import Contact from './homeComponent/contact/Contact';
 import AboutMe from './AboutMe';
+import Education from './homeComponent/Education';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
            
             <About></About>
             <AboutMe></AboutMe>
+            <Education></Education>
             <Projects></Projects>
             <MySkills></MySkills>
             {/* <Gallery></Gallery> */}
