@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import logo from '../assets/Screenshot_44.png'
 const Navber = () => {
   const links = (
-    <div className="md:flex  md:space-x-3 md:text-2xl">
+    <div className="md:flex text-[18px]  md:space-x-3 md:text-2xl">
       <a className="cursor-pointer hover:text-red-500" href="/">
         <li>Home</li>
       </a>
