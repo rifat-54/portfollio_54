@@ -7,6 +7,7 @@ const Project2 = () => {
         <div className="card bg-base-100 max-w-3xl mx-auto shadow-sm">
           <figure>
             <img
+            referrerPolicy="no-referrer"
               src="https://i.ibb.co.com/TB8nvQ5y/Screenshot-21.png"
               alt="Learn Nest Project"
             />

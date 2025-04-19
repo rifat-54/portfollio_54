@@ -20,6 +20,7 @@ const Projects = () => {
           </div>
           <figure className="relative">
             <img
+            referrerPolicy="no-referrer"
               src="https://i.ibb.co.com/BWkn5nJ/Screenshot-19.png"
               alt="Shoes"
             />
@@ -42,6 +43,7 @@ const Projects = () => {
           </div>
           <figure className="relative">
             <img
+            referrerPolicy="no-referrer"
               src="https://i.ibb.co.com/TB8nvQ5y/Screenshot-21.png"
               alt="Book"
             />
@@ -67,6 +69,7 @@ const Projects = () => {
            
 
             <img
+            referrerPolicy="no-referrer"
             className=" w-full h-full text-center object-fill"
             src={groupstudy}
             alt="Book"

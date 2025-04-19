@@ -7,7 +7,8 @@ const Project3 = () => {
         <div className="pt-10 pb-16">
           <div className="card bg-base-100 max-w-3xl mx-auto shadow-sm">
             <figure>
-              <img
+              <img 
+              referrerPolicy="no-referrer"
                 src={groupstudy}
                 alt="Group Study Project"
               />

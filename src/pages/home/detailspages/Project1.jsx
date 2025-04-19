@@ -6,6 +6,7 @@ const Project1 = () => {
       <div className="card bg-base-100 max-w-3xl mx-auto shadow-sm">
         <figure>
           <img
+          referrerPolicy="no-referrer"
             src="https://i.ibb.co.com/BWkn5nJ/Screenshot-19.png"
             alt="Food"
           />
