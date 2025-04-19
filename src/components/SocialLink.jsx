@@ -18,7 +18,7 @@ const SocialLink = () => {
         </a>
 
         <a target="_blank" href="https://www.facebook.com/profile.php?id=61560947461638">
-          <span className="text-4xl text-[#0866FF]">
+          <span className="text-4xl text-[#0866FF] ">
             <FaFacebook />
           </span>
         </a>

@@ -18,7 +18,7 @@ const sendEmail = (email,message) => {
   .then((result) => {
     // console.log('Email sent!', result.text);
     Swal.fire({
-      position: "top-end",
+      position: "center",
       icon: "success",
       title: `Success! Please wait to get response`,
       showConfirmButton: false,

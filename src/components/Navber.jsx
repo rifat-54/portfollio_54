@@ -1,10 +1,10 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
 import { Link } from "react-scroll";
-
+import logo from '../assets/Screenshot_44.png'
 const Navber = () => {
   const links = (
-    <div className="flex space-x-3 text-2xl">
+    <div className="md:flex  md:space-x-3 md:text-2xl">
       <a className="cursor-pointer hover:text-red-500" href="/">
         <li>Home</li>
       </a>
@@ -78,12 +78,15 @@ const Navber = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-black rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a href="/" className=" text-xl">
+          <div className="hidden lg:block">
+          <img className="w-[87px] rounded-md" src={logo} alt="" />
+            </div></a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
