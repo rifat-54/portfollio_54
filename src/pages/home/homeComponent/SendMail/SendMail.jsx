@@ -7,39 +7,39 @@ const SendMail = () => {
     const emailref=useRef()
     const messageref=useRef()
 
-    emailjs.init(import.meta.env.VITE_USER_API_KEY); // Get this from emailjs.com dashboard
+    // emailjs.init(import.meta.env.VITE_USER_API_KEY); // Get this from emailjs.com dashboard
 
-const sendEmail = (email,message) => {
-  emailjs.send(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID, {
-    name: 'Rifat',
-    email: email,
-    message: message,
-  })
-  .then((result) => {
-    // console.log('Email sent!', result.text);
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: `Success! Please wait to get response`,
-      showConfirmButton: false,
-      timer: 1500
-    });
+// const sendEmail = (email,message) => {
+//   emailjs.send(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID, {
+//     name: 'Rifat',
+//     email: email,
+//     message: message,
+//   })
+//   .then((result) => {
+//     // console.log('Email sent!', result.text);
+//     Swal.fire({
+//       position: "center",
+//       icon: "success",
+//       title: `Success! Please wait to get response`,
+//       showConfirmButton: false,
+//       timer: 1500
+//     });
 
-    emailref.current.value=" "
-    messageref.current.value=" "
-  }, (error) => {
-    console.error('Email failed...', error);
-  });
-};
+//     emailref.current.value=" "
+//     messageref.current.value=" "
+//   }, (error) => {
+//     console.error('Email failed...', error);
+//   });
+// };
 
 
-    const handleSendMaiil=()=>{
-            const email=emailref.current.value;
-            const message=messageref.current.value;
+//     const handleSendMaiil=()=>{
+//             const email=emailref.current.value;
+//             const message=messageref.current.value;
 
-            // console.log(email,message);
-            sendEmail(email,message)
-    }
+//             // console.log(email,message);
+//             sendEmail(email,message)
+//     }
 
 
 

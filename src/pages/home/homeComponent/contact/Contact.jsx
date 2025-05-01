@@ -6,7 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { IoShareSocialOutline } from "react-icons/io5";
 const Contact = () => {
   return (
-    <div id="contact" className="mt-20">
+    <div id="contact" className="mt-20 pb-20">
       <h2 className="text-3xl font-semibold text-center mb-14"> Contact Me</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="md:w-4/5 w-full flex items-center gap-5 mx-auto opacity-90 rounded-md bg-[#3F3F46] px-4 py-3">

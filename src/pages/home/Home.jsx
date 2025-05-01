@@ -19,7 +19,7 @@ const Home = () => {
             <MySkills></MySkills>
             {/* <Gallery></Gallery> */}
             <Contact></Contact>
-            <SendMail></SendMail>
+            {/* <SendMail></SendMail> */}
         </div>
     );
 };
