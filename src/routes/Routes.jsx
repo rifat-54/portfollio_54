@@ -4,6 +4,7 @@ import Home from "../pages/home/Home";
 import Project1 from "../pages/home/detailspages/Project1";
 import Project2 from "../pages/home/detailspages/Project2";
 import Project3 from "../pages/home/detailspages/Project3";
+import Demo from "../pages/demo/demo";
 
 
 
@@ -27,6 +28,10 @@ const routes=createBrowserRouter([
             {
                 path:'/group-study',
                 element:<Project3></Project3>
+            },
+            {
+                path:'/demo',
+                element:<Demo></Demo>
             }
         ]  
     }

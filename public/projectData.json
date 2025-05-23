@@ -1,0 +1,81 @@
+[
+    {
+      "name": "Bistro Boss Restaurant",
+      "image": "https://i.ibb.co.com/BWkn5nJ/Screenshot-19.png",
+      "route": "/bistroboss",
+      "details": {
+        "description": "Bistro Boss Restaurant is a modern and responsive restaurant website showcasing an engaging UI, dynamic menu, customer testimonials, and a streamlined ordering experience. It also includes admin functionalities like adding new menu items and managing users.",
+        "techStack": {
+          "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
+          "backend": "Firebase (for authentication), MongoDB, Express.js (if used)",
+          "tools": "Axios, Swiper.js"
+        },
+        "liveLink": "https://bistro-boss-restaurant-42687.web.app/",
+        "githubLink": "https://github.com/rifat-54/bistro-restaurant-client-and-server/tree/main/bistro-boss-restaurant-client",
+        "challenges": [
+          "Integrating Firebase authentication with role-based access control for admin routes",
+          "Designing a clean, responsive UI across all screen sizes",
+          "Handling secure API calls with JWT and protecting routes",
+          "Managing conditional rendering and state management for dashboard functionality"
+        ],
+        "futurePlans": [
+          "Improving accessibility and SEO performance",
+          "Adding multi-language support and dark mode toggle"
+        ],
+        "gallery": []
+      }
+    },
+    {
+      "name": "Learn Nest Academy",
+      "image": "https://i.ibb.co.com/TB8nvQ5y/Screenshot-21.png",
+      "route": "/learn-nest",
+      "details": {
+        "description": "Learn Nest is an educational platform designed to streamline the learning process for students and tutors. It offers user role-based dashboards, course browsing, class management, and a seamless, responsive UI with secure authentication and protected routes.",
+        "techStack": {
+          "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
+          "backend": "Node.js, Express.js, MongoDB",
+          "tools": "Axios, Firebase, JWT, React Hook Form, Swiper.js"
+        },
+        "liveLink": "https://a-12-learnnest.web.app/",
+        "githubLink": "https://github.com/rifat-54/a-12-LearnNest-client-site",
+        "challenges": [
+          "Implementing role-based route protection using Firebase Auth and JWT",
+          "Creating dynamic dashboards for admin, instructor, and student roles",
+          "Managing secure API calls with token-based authentication",
+          "Validating form inputs with React Hook Form and handling real-time updates"
+        ],
+        "futurePlans": [
+          "Adding real-time chat functionality between students and instructors",
+          "Course progress tracking and certificate generation",
+          "Improving performance with React Query"
+        ],
+        "gallery": []
+      }
+    },
+    {
+      "name": "Group Study Platform",
+      "image": "groupstudy",
+      "route": "/group-study",
+      "details": {
+        "description": "Group Study is a collaborative academic platform where students can create or join study groups, manage learning sessions, and interact with peers. It also includes a robust assignment management system with role-based dashboard and clean UI.",
+        "techStack": {
+          "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
+          "backend": "Node.js, Express.js, MongoDB",
+          "tools": "Axios, Firebase, JWT, React Hook Form"
+        },
+        "liveLink": "https://group-study-be847.web.app/",
+        "githubLink": "https://github.com/rifat-54/a-11-group-study-client-site",
+        "challenges": [
+          "Implementing secure login and protecting private study group content",
+          "Managing dynamic user roles (admin, member, guest)",
+          "Setting up real-time updates for group activities/events"
+        ],
+        "futurePlans": [
+          "Enhancing UI for mobile experience",
+          "Integrating video call features for virtual group sessions",
+          "Gamifying participation with leaderboard and badges"
+        ],
+        "gallery": []
+      }
+    }
+  ]

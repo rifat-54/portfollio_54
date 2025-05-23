@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { FaArrowCircleRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 import groupstudy from '../../../../assets/groupstudy.png'
 const Projects = () => {
+
+  const[projectData,setProjectData]=useState([])
+
+  useEffect(()=>{
+    fetch('./projectData.json')
+    .then((res)=>res.json())
+    .then((data)=>setProjectData(data))
+  },[])
+
+  console.log(projectData);
+
   return (
     <div id="projects" className="mb-24 mt-10 md:px-1">
-      <h2 className="text-3xl font-bold text-center mt-2 mb-12">
+      <h2 className="text-3xl font-bold text-center mt-2 mb-20">
         Rescent Projects
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">

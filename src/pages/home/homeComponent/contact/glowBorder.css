@@ -1,0 +1,25 @@
+/* glowBorder.css */
+@keyframes glow-border {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+  
+  .glow-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 0.375rem;
+    padding: 2px;
+    background: linear-gradient(270deg, #00f0ff, #ff00ff, #00f0ff);
+    background-size: 400% 400%;
+    animation: glow-border 4s linear infinite;
+    z-index: -1;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+  }
+  

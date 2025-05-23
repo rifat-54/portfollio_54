@@ -1,18 +1,17 @@
 import React from "react";
+import RevelUp from "../../components/animation/RevelUp";
 
 const AboutMe = () => {
   return (
-    <div>
-      <section
-        className="bg-black text-white py-12 px-6 md:px-20"
-        id="about"
-      >
-        <div className="max-w-4xl mx-auto">
+    <RevelUp>
+      <section className="px-2 sm:px-5 md:px-16" id="about">
+        <div className="max-w-4xl mx-auto   hover:shadow-2xl transition-shadow hover:scale-105 hover:transition-transform duration-300 bg-black text-white my-12">
           <h2 className="text-4xl font-bold mb-6 text-center relative inline-block after:block after:h-1 after:w-24 after:bg-blue-500 after:mt-2 after:mx-auto">
             👋 About Me
           </h2>
           <p className="text-lg leading-relaxed text-gray-300">
-            Hey! I’m <span className="font-semibold text-3xl text-blue-600">Rifat</span>,
+            Hey! I’m{" "}
+            <span className="font-semibold text-3xl text-blue-600">Rifat</span>,
             a passionate web developer who loves turning ideas into interactive,
             user-friendly web applications. My coding journey began with
             curiosity and has grown into a deep interest in full-stack
@@ -32,7 +31,7 @@ const AboutMe = () => {
           </p>
         </div>
       </section>
-    </div>
+    </RevelUp>
   );
 };
 

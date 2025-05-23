@@ -1,65 +1,93 @@
 import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
 
 const SendMail = () => {
+  const formRef = useRef();
 
-    const emailref=useRef()
-    const messageref=useRef()
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    // emailjs.init(import.meta.env.VITE_USER_API_KEY); // Get this from emailjs.com dashboard
+    const formData = new FormData(formRef.current);
+   
 
-// const sendEmail = (email,message) => {
-//   emailjs.send(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_TEMPLATE_ID, {
-//     name: 'Rifat',
-//     email: email,
-//     message: message,
-//   })
-//   .then((result) => {
-//     // console.log('Email sent!', result.text);
-//     Swal.fire({
-//       position: "center",
-//       icon: "success",
-//       title: `Success! Please wait to get response`,
-//       showConfirmButton: false,
-//       timer: 1500
-//     });
+    try {
+      const response = await fetch("https://formspree.io/f/xdkgvbda", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: formData,
+      });
 
-//     emailref.current.value=" "
-//     messageref.current.value=" "
-//   }, (error) => {
-//     console.error('Email failed...', error);
-//   });
-// };
-
-
-//     const handleSendMaiil=()=>{
-//             const email=emailref.current.value;
-//             const message=messageref.current.value;
-
-//             // console.log(email,message);
-//             sendEmail(email,message)
-//     }
-
-
-
-
+    
+      if (response.ok) {
+        Swal.fire({
+          icon: "success",
+          title: "Success!",
+          text: "Your message has been sent.",
+          timer: 1500,
+          showConfirmButton: false,
+        });
+        formRef.current.reset();
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Something went wrong. Try again later.",
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Network error. Please try again later.",
+      });
+    }
+  };
 
   return (
-    <div className="py-20">
+    <div className="pb-20 mt-10">
       <h2 className="text-3xl text-center mb-10">Send Mail</h2>
-      <div>
-        <div className="card bg-[#3F3F46] w-full md:w-3/5 max-w-3xl mx-auto shrink-0 shadow-2xl">
-          <div className="card-body w-full">
-            <fieldset className="fieldset">
-              <input ref={emailref} type="email" className="input md:w-3/5 mx-auto bg-white text-black" placeholder="your email" />
+      <div className="my-16 px-4 md:px-24 ">
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="card bg-[#3F3F46] w-full md:w-5/6 max-w-3xl mx-auto shadow-2xl custom-glow-section hover:scale-105 transition-transform duration-300"
+        >
+          {/* Name Field */}
+          <input
+            type="text"
+            name="name"
+            required
+            placeholder="Your Name"
+            className="w-full  px-4 py-3 mt-8 bg-gray-100 text-black border-2 border-blue-500 rounded-md"
+          />
 
-              <textarea ref={messageref} className="textarea w-full my-5 bg-white text-black" placeholder="Write your message..."></textarea>{" "}
-              
-              <button onClick={handleSendMaiil} className="btn hover:bg-blue-500 bg-green-500 text-white mt-4">Send Mail</button>
-            </fieldset>
-          </div>
-        </div>
+          {/* Email Field */}
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="Your Email"
+            className="w-full px-4 py-3 my-8 bg-gray-100 text-black border-2 border-blue-500 rounded-md"
+          />
+
+          {/* Message Field */}
+          <textarea
+            name="message"
+            required
+            placeholder="Write your message..."
+            className="w-full px-4 py-3 mb-6 bg-gray-100 text-black border-2 border-blue-500 rounded-md"
+          />
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="relative my-6 px-6 py-3 text-white font-semibold tracking-wide rounded-md bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500 shadow-md transition-all duration-300 hover:scale-105"
+          >
+            Send Mail
+          </button>
+        </form>
       </div>
     </div>
   );

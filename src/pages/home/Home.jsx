@@ -1,7 +1,7 @@
 import React from 'react';
 import About from './homeComponent/About';
 import Projects from './homeComponent/projects/Projects';
-import MySkills from './homeComponent/MySkills';
+import MySkills from './homeComponent/myskills/MySkills';
 import SendMail from './homeComponent/SendMail/SendMail';
 import Gallery from './homeComponent/gallery/Gallery';
 import Contact from './homeComponent/contact/Contact';
@@ -17,9 +17,9 @@ const Home = () => {
             <Education></Education>
             <Projects></Projects>
             <MySkills></MySkills>
-            {/* <Gallery></Gallery> */}
+            <Gallery></Gallery>
             <Contact></Contact>
-            {/* <SendMail></SendMail> */}
+            <SendMail></SendMail>
         </div>
     );
 };

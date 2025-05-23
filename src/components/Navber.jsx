@@ -1,18 +1,18 @@
 import React from "react";
 import { FaDownload } from "react-icons/fa6";
 import { Link } from "react-scroll";
-import logo from '../assets/Screenshot_44.png'
+import logo from "../assets/Screenshot_44.png";
 const Navber = () => {
   const links = (
-    <div className="md:flex text-[18px]  md:space-x-3 md:text-2xl">
-      <a className="cursor-pointer hover:text-red-500" href="/">
+    <div className="md:flex text-[18px]  md:space-x-8 md:text-2xl">
+      <a className="cursor-pointer hover:text-blue-500" href="/">
         <li>Home</li>
       </a>
       <Link
         to={"about"}
         smooth={true}
         duration={500}
-        className="cursor-pointer hover:text-red-500"
+        className="cursor-pointer hover:text-blue-500"
       >
         {" "}
         <li>About</li>{" "}
@@ -22,17 +22,17 @@ const Navber = () => {
         to={"projects"}
         smooth={true}
         duration={500}
-        className="cursor-pointer hover:text-red-500"
+        className="cursor-pointer hover:text-blue-500"
       >
         {" "}
         <li>Projects</li>{" "}
       </Link>
 
-    <Link
+      <Link
         to={"skills"}
         smooth={true}
         duration={500}
-        className="cursor-pointer hover:text-red-500"
+        className="cursor-pointer hover:text-blue-500"
       >
         {" "}
         <li>Skills</li>{" "}
@@ -42,20 +42,15 @@ const Navber = () => {
         to={"contact"}
         smooth={true}
         duration={500}
-        className="cursor-pointer hover:text-red-500"
+        className="cursor-pointer hover:text-blue-500"
       >
         {" "}
         <li>Contact</li>{" "}
       </Link>
-
-      
-      
-   
-   
     </div>
   );
   return (
-    <div className="bg-[#4B5D67] text-white ">
+    <div className="bg-[#000000] text-white ">
       <div className="navbar  shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -84,16 +79,20 @@ const Navber = () => {
             </ul>
           </div>
           <a href="/" className=" text-xl">
-          <div className="hidden lg:block">
-          <img className="w-[87px] rounded-md" src={logo} alt="" />
-            </div></a>
+            <div className="hidden lg:block">
+              <img className="w-[87px] rounded-md" src={logo} alt="" />
+            </div>
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-        <button className='btn  bg-[#6DE1D2] text-white'>Download CV <FaDownload /></button>
-
+          <button className="relative custom-glow-section hover:shadow-2xl   hover:transition-transform    my-6 px-6 py-3 text-white font-semibold tracking-wide rounded-md bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500 shadow-md transition-all duration-300 hover:scale-105">
+            <span className="relative z-10 flex items-center gap-3">
+              Download CV <FaDownload />
+            </span>
+          </button>
         </div>
       </div>
     </div>

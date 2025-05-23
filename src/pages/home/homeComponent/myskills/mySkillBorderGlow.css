@@ -1,0 +1,25 @@
+/* styles.css */
+@keyframes customGlow {
+    0% {
+      border-color: #00eeffb9;
+      box-shadow: 0 0 3px #00eeffc4, 0 0 5px #ff00ffb5;
+    }
+    50% {
+      border-color: #ff00ffb6;
+      box-shadow: 0 0 5px #ff00ffb4, 0 0 10px #00eeffbc;
+    }
+    100% {
+      border-color: #00eeffbe;
+      box-shadow: 0 0 10px #00eeffba, 0 0 15px #ff00ffcf;
+    }
+  }
+  
+  .custom-glow-section {
+    animation: customGlow 2s infinite;
+    border: 2px solid #00f0ff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0 1px #00f0ff, 0 0 1px #ff00ff;
+    z-index: 1; /* ensures glow is not over other content */
+  }
+  
