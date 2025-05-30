@@ -88,11 +88,17 @@ const Navber = () => {
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
         <div className="navbar-end">
-          <button className="relative custom-glow-section hover:shadow-2xl   hover:transition-transform    my-6 px-6 py-3 text-white font-semibold tracking-wide rounded-md bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500 shadow-md transition-all duration-300 hover:scale-105">
-            <span className="relative z-10 flex items-center gap-3">
-              Download CV <FaDownload />
-            </span>
-          </button>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1CYhBU-uDdoWF3-rMeQk_3NLObfg2nQJe/view?usp=sharing"
+          >
+            <button className="relative custom-glow-section hover:shadow-2xl   hover:transition-transform font-semibold   py-2 text-white tracking-wide rounded-md bg-gradient-to-r from-blue-500 via-sky-500 to-cyan-500 shadow-md transition-all duration-300 hover:scale-105">
+              <span className="relative z-10 flex items-center gap-3">
+                Hire Me
+              </span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

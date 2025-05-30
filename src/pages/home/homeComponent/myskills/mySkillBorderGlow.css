@@ -17,8 +17,11 @@
   .custom-glow-section {
     animation: customGlow 2s infinite;
     border: 2px solid #00f0ff;
-    border-radius: 0.5rem;
-    padding: 1rem;
+    border-radius: 2rem;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     box-shadow: 0 0 1px #00f0ff, 0 0 1px #ff00ff;
     z-index: 1; /* ensures glow is not over other content */
   }

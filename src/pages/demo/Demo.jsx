@@ -64,6 +64,8 @@ const Demo = () => {
       </div>
     </div>
 
+    <img src="https://img.icons8.com/?size=100&id=ROMfFZ1tMhpk&format=png&color=000000" alt="" />
+
     </div>
   );
 };

@@ -5,6 +5,7 @@ import Project1 from "../pages/home/detailspages/Project1";
 import Project2 from "../pages/home/detailspages/Project2";
 import Project3 from "../pages/home/detailspages/Project3";
 import Demo from "../pages/demo/demo";
+import ProjectDetails from "../pages/projectDetails/ProjectDetails";
 
 
 
@@ -32,6 +33,10 @@ const routes=createBrowserRouter([
             {
                 path:'/demo',
                 element:<Demo></Demo>
+            },
+            {
+                path:'/project-details/:id',
+                element:<ProjectDetails></ProjectDetails>
             }
         ]  
     }

@@ -1,81 +1,148 @@
 [
-    {
-      "name": "Bistro Boss Restaurant",
-      "image": "https://i.ibb.co.com/BWkn5nJ/Screenshot-19.png",
-      "route": "/bistroboss",
-      "details": {
-        "description": "Bistro Boss Restaurant is a modern and responsive restaurant website showcasing an engaging UI, dynamic menu, customer testimonials, and a streamlined ordering experience. It also includes admin functionalities like adding new menu items and managing users.",
-        "techStack": {
-          "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
-          "backend": "Firebase (for authentication), MongoDB, Express.js (if used)",
-          "tools": "Axios, Swiper.js"
-        },
-        "liveLink": "https://bistro-boss-restaurant-42687.web.app/",
-        "githubLink": "https://github.com/rifat-54/bistro-restaurant-client-and-server/tree/main/bistro-boss-restaurant-client",
-        "challenges": [
-          "Integrating Firebase authentication with role-based access control for admin routes",
-          "Designing a clean, responsive UI across all screen sizes",
-          "Handling secure API calls with JWT and protecting routes",
-          "Managing conditional rendering and state management for dashboard functionality"
-        ],
-        "futurePlans": [
-          "Improving accessibility and SEO performance",
-          "Adding multi-language support and dark mode toggle"
-        ],
-        "gallery": []
-      }
-    },
-    {
-      "name": "Learn Nest Academy",
-      "image": "https://i.ibb.co.com/TB8nvQ5y/Screenshot-21.png",
-      "route": "/learn-nest",
-      "details": {
-        "description": "Learn Nest is an educational platform designed to streamline the learning process for students and tutors. It offers user role-based dashboards, course browsing, class management, and a seamless, responsive UI with secure authentication and protected routes.",
-        "techStack": {
-          "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
-          "backend": "Node.js, Express.js, MongoDB",
-          "tools": "Axios, Firebase, JWT, React Hook Form, Swiper.js"
-        },
-        "liveLink": "https://a-12-learnnest.web.app/",
-        "githubLink": "https://github.com/rifat-54/a-12-LearnNest-client-site",
-        "challenges": [
-          "Implementing role-based route protection using Firebase Auth and JWT",
-          "Creating dynamic dashboards for admin, instructor, and student roles",
-          "Managing secure API calls with token-based authentication",
-          "Validating form inputs with React Hook Form and handling real-time updates"
-        ],
-        "futurePlans": [
-          "Adding real-time chat functionality between students and instructors",
-          "Course progress tracking and certificate generation",
-          "Improving performance with React Query"
-        ],
-        "gallery": []
-      }
-    },
-    {
-      "name": "Group Study Platform",
-      "image": "groupstudy",
-      "route": "/group-study",
-      "details": {
-        "description": "Group Study is a collaborative academic platform where students can create or join study groups, manage learning sessions, and interact with peers. It also includes a robust assignment management system with role-based dashboard and clean UI.",
-        "techStack": {
-          "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
-          "backend": "Node.js, Express.js, MongoDB",
-          "tools": "Axios, Firebase, JWT, React Hook Form"
-        },
-        "liveLink": "https://group-study-be847.web.app/",
-        "githubLink": "https://github.com/rifat-54/a-11-group-study-client-site",
-        "challenges": [
-          "Implementing secure login and protecting private study group content",
-          "Managing dynamic user roles (admin, member, guest)",
-          "Setting up real-time updates for group activities/events"
-        ],
-        "futurePlans": [
-          "Enhancing UI for mobile experience",
-          "Integrating video call features for virtual group sessions",
-          "Gamifying participation with leaderboard and badges"
-        ],
-        "gallery": []
-      }
+  {
+    "id": "4",
+    "name": "Parcel Management System",
+    "image": "https://i.ibb.co/49bHDf5/go-drop-eb0ec-web-app-1.png",
+    "route": "/parcel-management",
+    "details": {
+      "description": "Parcel Management System is a full-stack web application built for managing delivery operations. It includes features for admins, users, and delivery men. Users can book parcels, delivery men can update status, and admins can monitor and manage the entire flow through a secure dashboard.",
+      "techStack": {
+        "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
+        "backend": "Node.js, Express.js, MongoDB, JWT (for authentication)",
+        "tools": "Axios, React Hook Form, TanStack Query, Date-fns"
+      },
+      "liveLink": "https://go-drop-eb0ec.web.app/",
+      "githubLink": "https://github.com/rifat-54/go-drop-client-side",
+      "admin":{
+       "user": "Admin Email: admin12@gmail.com",
+        "pass":"Admin Pass: Ad@min23"
+      },
+      "subAdmin":{
+       "user": "DeliveryMan Email: sophia12@gmail.com ",
+        "pass":"DeliveryMan Pass: soPh@ia23"
+      },
+      "challenges": [
+        "Implementing role-based dashboards for admin, delivery men, and users",
+        "Securing backend routes using JWT and verifying user roles",
+        "Managing real-time parcel status updates and dynamic table rendering",
+        "Optimizing user experience for data fetching, filtering, and delivery tracking"
+      ],
+      "futurePlans": [
+        "Integrating real-time notifications (e.g., with Socket.io or Firebase)",
+        "Implementing payment gateway for parcel bookings",
+        "Building mobile-responsive PWA version"
+      ],
+      "gallery": [
+        "https://i.ibb.co/qF2cxR6h/Screenshot-68.png",
+        "https://i.ibb.co/TqgTLhMr/Screenshot-69.png",
+        "https://i.ibb.co/3YvS8xQ9/Screenshot-71.png",
+        "https://i.ibb.co/JwZdHdXR/Screenshot-72.png",
+        "https://i.ibb.co/tM7qNJ7J/Screenshot-73.png",
+        "https://i.ibb.co/Zzk9Psdg/Screenshot-74.png"
+    ]
     }
-  ]
+  },
+
+  {
+    "id": "1",
+    "name": "Bistro Boss Restaurant",
+    "image": "https://i.ibb.co/PvSjq59L/bistro-boss-restaurant-42687-web-app-1-1.png",
+    "route": "/bistroboss",
+    "details": {
+      "description": "Bistro Boss Restaurant is a modern and responsive restaurant website showcasing an engaging UI, dynamic menu, customer testimonials, and a streamlined ordering experience. It also includes admin functionalities like adding new menu items and managing users.",
+      "techStack": {
+        "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
+        "backend": "Firebase (for authentication), MongoDB, Express.js (if used)",
+        "tools": "Axios, Swiper.js"
+      },
+      "liveLink": "https://bistro-boss-restaurant-42687.web.app/",
+      "githubLink": "https://github.com/rifat-54/bistro-restaurant-client-and-server/tree/main/bistro-boss-restaurant-client",
+      "admin":{
+        "user": "Admin Email: admin12@gmail.com",
+         "pass":"Admin Pass: Ad@min23"
+       },
+      "challenges": [
+        "Integrating Firebase authentication with role-based access control for admin routes",
+        "Designing a clean, responsive UI across all screen sizes",
+        "Handling secure API calls with JWT and protecting routes",
+        "Managing conditional rendering and state management for dashboard functionality"
+      ],
+      "futurePlans": [
+        "Improving accessibility and SEO performance",
+        "Adding multi-language support and dark mode toggle"
+      ],
+      "gallery": [
+        "https://i.ibb.co.com/BWkn5nJ/Screenshot-19.png",
+        "https://i.ibb.co/pFG4pjJ/Screenshot-75.png",
+        "https://i.ibb.co/LzP7H1WW/Screenshot-76.png",
+        "https://i.ibb.co/Xkb3LdvD/Screenshot-77.png"
+      ]
+    }
+  },
+  {
+    "id": "2",
+    "name": "Learn Nest Academy",
+    "image": "https://i.ibb.co/rPLky35/a-12-learnnest-web-app-1.png",
+    "route": "/learn-nest",
+    "details": {
+      "description": "Learn Nest is an educational platform designed to streamline the learning process for students and tutors. It offers user role-based dashboards, course browsing, class management, and a seamless, responsive UI with secure authentication and protected routes.",
+      "techStack": {
+        "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
+        "backend": "Node.js, Express.js, MongoDB",
+        "tools": "Axios, Firebase, JWT, React Hook Form, Swiper.js"
+      },
+      "liveLink": "https://a-12-learnnest.web.app/",
+      "githubLink": "https://github.com/rifat-54/a-12-LearnNest-client-site",
+      "admin":{
+        "user": "Admin Email: admin@123gmail.com",
+         "pass":"Admin Pass: 1234aA@"
+       },
+      "challenges": [
+        "Implementing role-based route protection using Firebase Auth and JWT",
+        "Creating dynamic dashboards for admin, instructor, and student roles",
+        "Managing secure API calls with token-based authentication",
+        "Validating form inputs with React Hook Form and handling real-time updates"
+      ],
+      "futurePlans": [
+        "Adding real-time chat functionality between students and instructors",
+        "Course progress tracking and certificate generation",
+        "Improving performance with React Query"
+      ],
+      "gallery": [
+        "https://i.ibb.co.com/TB8nvQ5y/Screenshot-21.png",
+        "https://i.ibb.co/TjQFdzg/Screenshot-78.png",
+        "https://i.ibb.co/j9YKMgnq/Screenshot-79.png"
+      ]
+    }
+  },
+  {
+    "id": "3",
+    "name": "Group Study Platform",
+    "image": "https://i.ibb.co/wZgxHSRM/group-study-be847-web-app-1.png",
+    "route": "/group-study",
+    "details": {
+      "description": "Group Study is a collaborative academic platform where students can create or join study groups, manage learning sessions, and interact with peers. It also includes a robust assignment management system with role-based dashboard and clean UI.",
+      "techStack": {
+        "frontend": "React.js, Tailwind CSS, DaisyUI, React Router",
+        "backend": "Node.js, Express.js, MongoDB",
+        "tools": "Axios, Firebase, JWT, React Hook Form"
+      },
+      "liveLink": "https://group-study-be847.web.app/",
+      "githubLink": "https://github.com/rifat-54/a-11-group-study-client-site",
+      "challenges": [
+        "Implementing secure login and protecting private study group content",
+        "Managing dynamic user roles (admin, member, guest)",
+        "Setting up real-time updates for group activities/events"
+      ],
+      "futurePlans": [
+        "Enhancing UI for mobile experience",
+        "Integrating video call features for virtual group sessions",
+        "Gamifying participation with leaderboard and badges"
+      ],
+      "gallery": [
+        "https://i.ibb.co/6Jf7hLFZ/Screenshot-80.png",
+        "https://i.ibb.co/FLJXq8Qd/Screenshot-81.png"
+      ]
+    }
+  }
+]

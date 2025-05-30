@@ -16,7 +16,7 @@ const SocialLink = () => {
       {/* LinkedIn */}
       <div className="neon-glow">
         <a
-          href="https://www.linkedin.com/in/yourprofile"
+          href="https://www.linkedin.com/in/md-mashur-rahman-rifat-239357368/"
           target="_blank"
           rel="noreferrer"
         >

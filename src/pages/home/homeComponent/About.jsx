@@ -36,19 +36,24 @@ const About = () => {
 
           <SocialLink></SocialLink>
 
-          <div className="flex  gap-4 flex-wrap items-center justify-between mt-14">
+          <div className="flex  px-3 gap-4 flex-wrap items-center justify-between mt-14">
+            <a href="/MD.Mashur_Rahman_Rifat_Resume.pdf" download={"Rifat_Resume.pdf"}>
             <button
               className="btn flex opacity-90 items-center rounded-md bg-[#111111] px-5 py-7
                 relative glow-border   gap-5 mx-auto  hover:shadow-2xl transition-shadow hover:scale-105 hover:transition-transform duration-300 text-xl   text-white"
             >
               Download Resume <FaDownload />
             </button>
-            <button
-              className="btn flex opacity-90 items-center rounded-md bg-[#0f0f10] px-5 py-7
+            </a>
+            
+            <a href="/MD.Mashur_Rahman_Rifat_CV.pdf" download={"Rifat_CV.pdf"}>
+              <button
+                className="btn flex opacity-90 items-center rounded-md bg-[#0f0f10] px-5 py-7
                 relative glow-border   gap-5 mx-auto  hover:shadow-2xl transition-shadow hover:scale-105 hover:transition-transform duration-300 text-xl   text-white"
-            >
-              Download CV <FaDownload />
-            </button>
+              >
+                Download CV <FaDownload />
+              </button>
+            </a>
           </div>
         </div>
       </RevelSideRight>

@@ -1,32 +1,32 @@
-.swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
-  .swiper-slide {
-    /* background-position: center;
-    background-size: cover;
-    width: 300px; */
-    height:100%;
+
+  /* button */
+
+
+  /* glowBorder.css */
+@keyframes custom-glow-border {
+  0% {
+    background-position: 0% 50%;
   }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.custom-glow-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  padding: 2px;
+  background: linear-gradient(270deg, #00f0ff, #ff00ff, #00f0ff);
+  background-size: 400% 400%;
+  animation: custom-glow-border 4s linear infinite;
+  z-index: -1;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
 
   
   
