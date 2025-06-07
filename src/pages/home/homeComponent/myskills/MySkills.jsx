@@ -9,10 +9,19 @@ import { motion } from "motion/react";
 import { VscVscode } from "react-icons/vsc";
 import { SiFirebase } from "react-icons/si";
 import RevelUp from "../../../../components/animation/RevelUp";
-
+import { SiNextdotjs } from "react-icons/si";
 import "./mySkillBorderGlow.css";
+
+
 const MySkills = () => {
   const frontend = [
+    {
+      skill: "NextJs",
+      icon: <SiNextdotjs />,
+      color: "#00FFFF",
+      image:
+      'https://img.icons8.com/?size=100&id=AU6Wc7r56Fxz&format=png&color=000000',
+    },
     {
       skill: "ReactJs",
       icon: <GrReactjs />,
